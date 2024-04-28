@@ -36,4 +36,20 @@ app.use(express.static("public"))
 // With our server to access OR to perform CRUD operations on someone's else BROWSER.
 app.use(cookieParser())
 
+
+
+//Routes import 
+
+import router from './routes/user.routes.js'
+
+// routes declaration 
+// http://loacalhost:8000/api/v1/users....and the path of the hosted controller.
+app.use("/api/v1/users" , router)
+
+
+
+
+
+
+
 export {app}
