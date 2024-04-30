@@ -6,7 +6,7 @@ import dotenv from "dotenv"
 import { app } from "./app.js"
 import connectDB from "./db/index.js"
 
-dotenv.config({path: './'})
+dotenv.config({path: './.env'})
 
 //connectDB() , makes the conenction with the server.
 // .then() -> help to run the server .
